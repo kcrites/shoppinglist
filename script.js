@@ -74,10 +74,5 @@ input.addEventListener("keypress", addListAfterKeypress);
 // creates delete button associated event listener for each LI
 li.forEach(function(item){
 	item.addEventListener("click", toggleListAfterClick);
-	// var btn = document.createElement("button");
-	// var t = document.createTextNode("Delete");
-	// btn.appendChild(t);
-	// item.appendChild(btn);
-	// btn.addEventListener("click", deleteListItemAfterClick);
 	addDeleteButton(item);
 });
